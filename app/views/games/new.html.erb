@@ -1,0 +1,26 @@
+<div class="layout-new">
+  <h1>New game</h1>
+
+  <%# <div class="alert alert-secondary">
+  <%= @letters %>
+
+  <ul class="list-group">
+    <li class="list-group-item"><%= @letters[0] %></li>
+    <li class="list-group-item list-group-item-primary"><%= @letters[1] %></li>
+    <li class="list-group-item list-group-item-secondary"><%= @letters[2] %></li>
+    <li class="list-group-item list-group-item-success"><%= @letters[3] %></li>
+    <li class="list-group-item list-group-item-danger"><%= @letters[4] %></li>
+    <li class="list-group-item list-group-item-warning"><%= @letters[5] %></li>
+    <li class="list-group-item list-group-item-info"><%= @letters[6] %></li>
+    <li class="list-group-item list-group-item-light"><%= @letters[7] %></li>
+    <li class="list-group-item list-group-item-dark"><%= @letters[8] %></li>
+    <li class="list-group-item list-group-item-primary"><%= @letters[9] %></li>
+  </ul>
+
+  <form action="/score" method="post" data-turbo="false" class="mt-5">
+    <label for="words">What is the longest word you can find?</label>
+    <input type="text" name="words" class="form-control mb-2">
+    <input type="submit" value="play" class="btn btn-lg btn-primary">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  </form>
+</div>

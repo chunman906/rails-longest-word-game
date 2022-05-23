@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+.layout-new {
+  margin: 16px;
+  padding: 8px;
+}
+
+.layout-score {
+  margin: 16px;
+  padding: 8px;
+}
